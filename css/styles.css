@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.gridContainer {
+  width: 98.8vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+#header {
+  grid-area: header;
+  background-color: #ffc559;
+}
+#main {
+  grid-area: main;
+  background-color: rgb(248, 241, 230);
+}
+#footer {
+  grid-area: footer;
+  background-color: #242323;
+}
+/* --------------------------- BARRA DE NAVEGACION -------------------------- */
+.encabezado {
+  border-bottom: 2px solid #242323;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.encabezado a {
+  display: flex;
+  justify-content: center;
+}
+.encabezado .secNav {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.encabezado .secNav a {
+  text-decoration: none;
+  color: #242323;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.encabezado .secNav a:hover {
+  text-decoration: 3px solid underline;
+}
+.logotipo {
+  width: 11rem;
+  margin: 1rem;
+}
+/* --------------------------------- BANNER --------------------------------- */
+.banner {
+  background-image: url(../img/ind/portada.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  background-color: #24232393;
+  background-blend-mode: multiply;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 10rem;
+}
+.banner .titulos {
+  text-align: center;
+  color: whitesmoke;
+}
+.banner .titulos h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.banner .titulos h1 {
+  font-size: 6rem;
+  text-decoration: 3px solid overline;
+}
+/* -------------------------------- SECCION index ------------------------------- */
+.seccionesIndex {
+  margin: 2rem 3rem;
+}
+.seccionesIndex h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+}
+/* ----------------------------- SECCION GENERAL ---------------------------- */
+.secciones {
+  margin: 2rem 3rem;
+  padding-top: 9rem;
+}
+.secciones h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* ---------------------------- SECCION NOSOTROS ---------------------------- */
+.seccionNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nosotrosImg {
+  width: 20rem;
+  margin: 3rem;
+}
+.nosotrosText {
+  margin: 1rem 1rem;
+}
+.nosotrosText li {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style: none;
+  text-align: center;
+  padding: 2rem;
+}
+.nosotrosText p {
+  font-size: 2rem;
+  text-transform: none;
+  font-weight: normal;
+}
+/* ----------------------------- SECCION FOOTER ----------------------------- */
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+.footerContent h3 {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+.iconRedes {
+  border-bottom: 1px solid whitesmoke;
+}
+.iconRedes .icon {
+  margin: 1rem;
+}
+.dev {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+.dev a {
+  color: #ffc559;
+  font-weight: bold;
+}
+
+/* ---------------------------- SECCION PRODUCTOS --------------------------- */
+.seccionProductos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articulo {
+  margin: 1rem;
+}
+.articulo p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.imgProd {
+  width: 30rem;
+  border: solid 2px #242323;
+  border-radius: 1rem;
+}
+.secciones h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* ---------------------------- SECCION SERVICIOS --------------------------- */
+.seccionServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.figures {
+  margin: 2rem;
+  background-color: #ffc559;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 5%;
+  width: 23rem;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.548);
+}
+.textServ {
+  text-align: center;
+}
+.figures figcaption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.figures p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.imgServ {
+  width: 14rem;
+  padding: 1rem;
+}
+/* --------------------------- SECCION REFERENCIAS -------------------------- */
+.seccionReferencias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imgFaces {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 3px solid whitesmoke;
+  margin-right: 2rem;
+}
+.contenRef {
+  margin: 1rem;
+  display: flex;
+  background-color: #86cdfc70;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 8rem;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+}
+.textosRef h3 {
+  font-size: 1.3rem;
+  text-align: start;
+}
+.textosRef p {
+  font-size: 1.1rem;
+}
+/* ---------------------------- SECCION CONTACTO ---------------------------- */
+.secciones2 {
+  margin-top: 3rem;
+}
+.secciones2 h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.seccionContacto {
+  border: solid 1px #242323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario {
+  margin: 0px 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.formulario label {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0rem;
+}
+.formulario label input {
+  width: 30rem;
+  height: 3rem;
+  color: #242323a4;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+}
+.inputText {
+  margin-top: 2rem;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+  border-radius: 5px 5px 0px 0px;
+}
+.botonEnviar {
+  height: 4rem;
+  background-color: rgb(161, 193, 252);
+  border: none;
+  border-radius: 0px 0px 5px 5px;
+  color: #242323;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+}
+.botonEnviar:hover {
+  cursor: pointer;
+  background-color: rgb(49, 118, 245);
+  color: white;
+  font-weight: bold;
+}
+/* ----------------------------------- MQ ----------------------------------- */
+@media screen and (min-width: 767.98px) {
+  .banner {
+    height: 40vh;
+  }
+  .banner .titulos h3 {
+    font-size: 3rem;
+  }
+  .banner .titulos h1 {
+    font-size: 8rem;
+  }
+  .logotipo {
+    width: 12rem;
+  }
+  .encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2rem;
+  }
+  .encabezado .secNav li {
+    margin-left: 3rem;
+  }
+  .encabezado .secNav a {
+    font-size: 1.6rem;
+    margin-bottom: 0rem;
+  }
+  .seccionNosotros {
+    flex-direction: row;
+  }
+  .nosotrosImg {
+    width: 30rem;
+  }
+  .nosotrosText li {
+    list-style: outside;
+    text-align: start;
+  }
+  .nosotrosText p {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  /* ---------------------------- SECCION PRODUCTOS --------------------------- */
+  .seccionProductos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .imgProd {
+    width: 30rem;
+    height: 20rem;
+  }
+  .articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .secciones h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  /* ---------------------------- SECCION SERVICIOS --------------------------- */
+  .imgServ {
+    width: 20rem;
+  }
+  .figures {
+    flex-direction: row;
+    width: 50rem;
+  }
+  .textServ {
+    text-align: center;
+  }
+  .textServ figcaption {
+    font-size: 1.8rem;
+  }
+  .textServ p {
+    font-size: 1.4rem;
+  }
+  /* --------------------------- SECCION REFERENCIAS --------------------------- */
+  .seccionReferencias {
+    margin: 0px 5rem;
+  }
+  .contenRef {
+    height: 7rem;
+    padding: 2rem;
+  }
+  .textosRef h3 {
+    font-size: 1.7rem;
+    text-align: start;
+    padding: 0%;
+  }
+  .textosRef p {
+    font-size: 1.5rem;
+  }
+  /* ---------------------------- SECCION CONTACTO ---------------------------- */
+  .seccionContacto {
+    margin: 0rem 10rem;
+  }
+  .secciones2 {
+    margin-top: 3rem;
+  }
+  .secciones2 h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 991.98px) {
+  .banner .titulos h3 {
+    font-size: 4rem;
+  }
+  .banner .titulos h1 {
+    font-size: 11em;
+  }
+  .logotipo {
+    width: 13rem;
+  }
+  .encabezado .secNav a {
+    font-size: 1.8rem;
+  }
+  .nosotrosText {
+    margin: 1rem 5rem;
+  }
+  .nosotrosImg {
+    width: 38rem;
+  }
+
+  /* ---------------------------- SECCION PRODUCTOS --------------------------- */
+  .seccionProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  /* ---------------------------- SECCION SERVICIOS --------------------------- */
+  .seccionServicios {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .figures {
+    flex-direction: column;
+    width: 25rem;
+    height: 35rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+  }
+  .figures:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.918);
+  }
+  .imgServ {
+    width: 15rem;
+  }
+  .textServ {
+    padding: 0rem 2rem;
+  }
+  /* ---------------------------- SECCION CONTACTO ---------------------------- */
+  .seccionContacto {
+    margin: 0rem 10rem;
+  }
+  .secciones2 {
+    margin-top: 3rem;
+  }
+  .secciones2 h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .banner {
+    height: 70vh;
+  }
+  .banner .titulos h3 {
+    font-size: 5rem;
+  }
+  .banner .titulos h1 {
+    font-size: 13em;
+  }
+  .logotipo {
+    width: 15rem;
+  }
+  .encabezado .secNav a {
+    font-size: 1.9rem;
+  }
+  .seccionNosotros {
+    margin: 1rem 12rem;
+  }
+  .nosotrosText {
+    margin: 1rem 1rem;
+  }
+  .nosotrosImg {
+    width: 38rem;
+  }
+  /* ---------------------------- SECCION CONTACTO ---------------------------- */
+  .seccionContacto {
+    margin: 1rem 30rem;
+  }
+  .secciones2 {
+    margin-top: 10rem;
+  }
+  .secciones2 h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
