@@ -8,30 +8,6 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
 }
-
-.gridContainer {
-  width: 98.8vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 8fr 1fr;
-  grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-}
-#header {
-  grid-area: header;
-  background-color: #ffc559;
-}
-#main {
-  grid-area: main;
-  background-color: white;
-}
-#footer {
-  grid-area: footer;
-  background-color: #242323;
-}
 /* --------------------------- BARRA DE NAVEGACION -------------------------- */
 .encabezado {
   border-bottom: 2px solid #242323;
@@ -228,6 +204,7 @@ body {
 }
 .textServ {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 .figures figcaption {
   font-size: 1.5rem;
@@ -237,6 +214,7 @@ body {
 .figures p {
   text-align: center;
   font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
 }
 .imgServ {
   width: 14rem;
@@ -261,7 +239,7 @@ body {
   background-color: #86cdfc70;
   padding: 1rem;
   border-radius: 0.5rem;
-  height: 8rem;
+  height: 14rem;
 
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
 }
@@ -270,7 +248,7 @@ body {
   text-align: start;
 }
 .textosRef p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 /* ---------------------------- SECCION CONTACTO ---------------------------- */
 
@@ -369,7 +347,7 @@ body {
     margin: 0px 5rem;
   }
   .contenRef {
-    height: 7rem;
+    height: 10rem;
     padding: 2rem;
   }
   .textosRef h3 {
@@ -378,7 +356,8 @@ body {
     padding: 0%;
   }
   .textosRef p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
   }
   /* ---------------------------- SECCION CONTACTO ---------------------------- */
   .seccionContacto {
@@ -413,7 +392,6 @@ body {
   .nosotrosImg {
     width: 38rem;
   }
-
   /* ---------------------------- SECCION PRODUCTOS --------------------------- */
   .seccionProductos {
     display: grid;
@@ -428,7 +406,7 @@ body {
   .figures {
     flex-direction: column;
     width: 25rem;
-    height: 35rem;
+    height: 40rem;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
   }
   .figures:hover {
@@ -452,6 +430,39 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
+  }
+  .contenRef {
+    margin: 1rem;
+    display: flex;
+    background-color: #86cdfc70;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    height: 8rem;
+
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+  }
+  .textosRef h3 {
+    font-size: 1.3rem;
+    text-align: start;
+  }
+  .textosRef p {
+    font-size: 1.1rem;
+  }
+  /* --------------------------- SECCION REFERENCIAS -------------------------- */
+  .seccionReferencias {
+    margin: 0px 5rem;
+  }
+  .contenRef {
+    height: 12rem;
+    padding: 2rem;
+  }
+  .textosRef h3 {
+    font-size: 1.7rem;
+    text-align: start;
+    padding: 0%;
+  }
+  .textosRef p {
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1199.98px) {
@@ -491,6 +502,22 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
+  }
+  /* --------------------------- SECCION REFERENCIAS -------------------------- */
+  .seccionReferencias {
+    margin: 0px 5rem;
+  }
+  .contenRef {
+    height: 11rem;
+    padding: 2rem;
+  }
+  .textosRef h3 {
+    font-size: 2rem;
+    text-align: start;
+    padding: 0%;
+  }
+  .textosRef p {
+    font-size: 1.5rem;
   }
 }
 /* -------------------------------- BOOTSTRAP -------------------------------- */
