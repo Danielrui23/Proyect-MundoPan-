@@ -8,29 +8,6 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
 }
-.gridContainer {
-  width: 98.8vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 8fr 1fr;
-  grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-}
-#header {
-  grid-area: header;
-  background-color: #ffc559;
-}
-#main {
-  grid-area: main;
-  background-color: rgb(248, 241, 230);
-}
-#footer {
-  grid-area: footer;
-  background-color: #242323;
-}
 /* --------------------------- BARRA DE NAVEGACION -------------------------- */
 .encabezado {
   border-bottom: 2px solid #242323;
@@ -51,23 +28,26 @@ body {
 }
 .encabezado .secNav a {
   text-decoration: none;
-  color: #242323;
-  font-weight: bold;
-  font-size: 1.4rem;
+  color: #2423239d;
+  font-weight: 550;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
+  transition: 0.4s;
 }
 .encabezado .secNav a:hover {
-  text-decoration: 3px solid underline;
+  font-weight: 600;
+  color: #242323e1;
 }
 .logotipo {
   width: 11rem;
   margin: 1rem;
 }
+/* ------------------------- ,.,..,..,..,..,.,..,.. ------------------------- */
+
 /* --------------------------------- BANNER --------------------------------- */
 .banner {
-  background-image: url(../img/ind/portada.jpeg);
+  background-image: url(../img/ind/2.png);
   background-size: cover;
-  width: 100%;
   height: 30vh;
   background-color: #24232393;
   background-blend-mode: multiply;
@@ -75,20 +55,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding-top: 10rem;
 }
 .banner .titulos {
+  margin-top: 6rem;
   text-align: center;
   color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
 }
 .banner .titulos h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 .banner .titulos h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   text-decoration: 3px solid overline;
+  font-weight: 700;
 }
 /* -------------------------------- SECCION index ------------------------------- */
 .seccionesIndex {
@@ -98,6 +79,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 /* ----------------------------- SECCION GENERAL ---------------------------- */
 .secciones {
@@ -108,6 +91,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 /* ---------------------------- SECCION NOSOTROS ---------------------------- */
@@ -130,22 +115,29 @@ body {
   list-style: none;
   text-align: center;
   padding: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 .nosotrosText p {
   font-size: 2rem;
   text-transform: none;
   font-weight: normal;
+  font-family: "Montserrat", sans-serif;
 }
 /* ----------------------------- SECCION FOOTER ----------------------------- */
+#footer {
+  background-color: #242323;
+}
 .footerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
 }
 .footerContent h3 {
   color: whitesmoke;
   font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  margin-top: 1rem;
 }
 .iconRedes {
   border-bottom: 1px solid whitesmoke;
@@ -156,8 +148,10 @@ body {
 .dev {
   color: whitesmoke;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 1rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: #242323;
 }
 .dev a {
   color: #ffc559;
@@ -175,7 +169,9 @@ body {
 }
 .articulo p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 .imgProd {
   width: 30rem;
@@ -185,6 +181,8 @@ body {
 .secciones h3 {
   text-align: center;
   font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 /* ---------------------------- SECCION SERVICIOS --------------------------- */
 .seccionServicios {
@@ -206,6 +204,7 @@ body {
 }
 .textServ {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 .figures figcaption {
   font-size: 1.5rem;
@@ -215,6 +214,7 @@ body {
 .figures p {
   text-align: center;
   font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
 }
 .imgServ {
   width: 14rem;
@@ -239,7 +239,7 @@ body {
   background-color: #86cdfc70;
   padding: 1rem;
   border-radius: 0.5rem;
-  height: 8rem;
+  height: 14rem;
 
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
 }
@@ -248,66 +248,22 @@ body {
   text-align: start;
 }
 .textosRef p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 /* ---------------------------- SECCION CONTACTO ---------------------------- */
+
 .secciones2 {
-  margin-top: 3rem;
+  margin: 9rem;
 }
 .secciones2 h2 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
-.seccionContacto {
-  border: solid 1px #242323;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.formulario {
-  margin: 0px 1rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-.formulario label {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0.5rem 0rem;
-}
-.formulario label input {
-  width: 30rem;
-  height: 3rem;
-  color: #242323a4;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-}
-.inputText {
-  margin-top: 2rem;
-  border: none;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-  border-radius: 5px 5px 0px 0px;
-}
-.botonEnviar {
-  height: 4rem;
-  background-color: rgb(161, 193, 252);
-  border: none;
-  border-radius: 0px 0px 5px 5px;
-  color: #242323;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-}
-.botonEnviar:hover {
-  cursor: pointer;
-  background-color: rgb(49, 118, 245);
-  color: white;
-  font-weight: bold;
-}
+
 /* ----------------------------------- MQ ----------------------------------- */
 @media screen and (min-width: 767.98px) {
   .banner {
@@ -326,7 +282,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 2rem;
+    padding: 0px 1rem;
   }
   .encabezado .secNav li {
     margin-left: 3rem;
@@ -391,7 +347,7 @@ body {
     margin: 0px 5rem;
   }
   .contenRef {
-    height: 7rem;
+    height: 10rem;
     padding: 2rem;
   }
   .textosRef h3 {
@@ -400,14 +356,15 @@ body {
     padding: 0%;
   }
   .textosRef p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
   }
   /* ---------------------------- SECCION CONTACTO ---------------------------- */
   .seccionContacto {
-    margin: 0rem 10rem;
+    margin: 1rem 30rem;
   }
   .secciones2 {
-    margin-top: 3rem;
+    margin-top: 10rem;
   }
   .secciones2 h2 {
     text-transform: uppercase;
@@ -435,7 +392,6 @@ body {
   .nosotrosImg {
     width: 38rem;
   }
-
   /* ---------------------------- SECCION PRODUCTOS --------------------------- */
   .seccionProductos {
     display: grid;
@@ -450,7 +406,7 @@ body {
   .figures {
     flex-direction: column;
     width: 25rem;
-    height: 35rem;
+    height: 40rem;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
   }
   .figures:hover {
@@ -464,16 +420,49 @@ body {
   }
   /* ---------------------------- SECCION CONTACTO ---------------------------- */
   .seccionContacto {
-    margin: 0rem 10rem;
+    margin: 1rem 30rem;
   }
   .secciones2 {
-    margin-top: 3rem;
+    margin-top: 10rem;
   }
   .secciones2 h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
+  }
+  .contenRef {
+    margin: 1rem;
+    display: flex;
+    background-color: #86cdfc70;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    height: 8rem;
+
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+  }
+  .textosRef h3 {
+    font-size: 1.3rem;
+    text-align: start;
+  }
+  .textosRef p {
+    font-size: 1.1rem;
+  }
+  /* --------------------------- SECCION REFERENCIAS -------------------------- */
+  .seccionReferencias {
+    margin: 0px 5rem;
+  }
+  .contenRef {
+    height: 12rem;
+    padding: 2rem;
+  }
+  .textosRef h3 {
+    font-size: 1.7rem;
+    text-align: start;
+    padding: 0%;
+  }
+  .textosRef p {
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1199.98px) {
@@ -514,4 +503,40 @@ body {
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
+  /* --------------------------- SECCION REFERENCIAS -------------------------- */
+  .seccionReferencias {
+    margin: 0px 5rem;
+  }
+  .contenRef {
+    height: 11rem;
+    padding: 2rem;
+  }
+  .textosRef h3 {
+    font-size: 2rem;
+    text-align: start;
+    padding: 0%;
+  }
+  .textosRef p {
+    font-size: 1.5rem;
+  }
+}
+/* -------------------------------- BOOTSTRAP -------------------------------- */
+nav img {
+  width: 15rem;
+  margin-left: 1.5rem;
+}
+.nav-link {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 2rem;
+}
+.bg-mnd {
+  border-bottom: 2px solid #242323;
+  background-color: #ffc559;
+}
+#footer a {
+  color: #ffc559;
+  text-decoration: none;
 }
