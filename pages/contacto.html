@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MundoPan!</title>
-
+    <!-- --------------------------- link de fuentes --------------------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <!-- --------------------------- LINK A ESTILOS ---------------------------- -->
-    <link rel="stylesheet" href="../css/styles.css" />
-    <!-- ---------------------------- LINK BOOSTRAP ---------------------------- -->
+    <!-- -------------------------- link de Bootstrap -------------------------- -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!-- --------------------------- link de estilos --------------------------- -->
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-mnd fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html"
-          ><img src="../img/ind/Logo.png" alt=""
+          ><img src="../img/ind/Logo.png" alt="logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -39,11 +44,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="../pages/productos.html">Productos</a>
             </li>
@@ -63,10 +65,10 @@
       </div>
     </nav>
 
-    <main>
-      <section class="secciones2">
+    <main class="contenedorPrincipal">
+      <section class="secciones">
         <h2>contacto</h2>
-        <section class="container-fluid">
+        <section class="container-fluid seccionContacto">
           <div class="row justify-content-center">
             <article class="col-md-5">
               <form class="row g-3 needs-validation" novalidate>
@@ -130,32 +132,20 @@
         </section>
       </section>
     </main>
-
-    <footer id="footer">
+    <!-- ------------------------------- Footer -------------------------------- -->
+    <footer id="pie">
       <div class="footerContent">
         <h3>Seguinos en nuestras redes</h3>
-        <div class="iconRedes">
-          <a href="https://facebook.com" target="_blank">
-            <img
-              src="../img/pie/facebook.png"
-              alt="Seguinos en facebook"
-              class="icon"
-            />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img
-              src="../img/pie/instagram.png"
-              alt="Seguinos en instagram"
-              class="icon"
-            />
-          </a>
-          <a href="https://twitter.com" target="_blank">
-            <img
-              src="../img/pie/twitter.png"
-              alt="Seguinos en twitter"
-              class="icon"
-            />
-          </a>
+        <div>
+          <a href="https://facebook.com" target="_blank"
+            ><i class="bi bi-facebook link-light h1"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="bi bi-instagram link-light h1"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="bi bi-twitter link-light h1"></i
+          ></a>
         </div>
       </div>
       <p class="dev">
