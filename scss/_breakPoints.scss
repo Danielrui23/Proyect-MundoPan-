@@ -1,0 +1,241 @@
+@import "_variables.scss";
+
+@media (min-width: 575.98px) {
+/* -- Seccion Referencias -- */
+.seccionReferencias {
+    padding: 1rem 5rem;
+    .contenRef {
+        background-color: $color-ref1;
+        &:hover {
+            transform: scale(1.15);
+            background-color: $color-ref1;
+        }
+    }
+}
+}
+@media (min-width: 767.98px) {
+.contenedorPrincipal {
+    .banner {
+        .titulos {
+            padding-top: 4rem;
+            h3 {
+                font-size: 3.5rem;
+            }
+            h1 {
+                font-size: 9rem;
+            }
+        }
+    }
+}
+/* -- Seccion Nosotros -- */
+.seccionIndex {
+    padding: 5rem 0;
+    h2 {
+        font-size: 3rem;
+    }
+    .seccionNosotros {
+        display: flex;
+        margin: 3rem 5rem;
+        img {
+            width: 28rem;
+        }
+        .textNosotros {
+            li {
+                font-size: 2rem;
+                p {
+                    font-size: 1.9rem;
+                    padding: 2rem 0;
+                }
+            }
+        }
+    }
+}
+/* -- Seccion Productos -- */
+.seccionProductos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    h3 {
+        font-size: 2.5rem;
+        padding-top: 5rem;
+    }
+}
+.contenedorPrincipal{
+    .secciones h2 {
+        font-size: 3rem;
+    }
+}
+/* -- Seccion Servicios -- */
+.seccionServicios {
+    padding: 1rem 6rem;
+    .figures {
+        display: flex;
+        .textServ {
+            figcaption {
+                font-size: 2rem;
+                }
+            p {
+                font-size: 1.5rem;
+                padding: 0.1rem 2rem;
+                }
+        }
+    }
+}
+/* -- Seccion Referencias -- */
+.seccionReferencias {
+    padding: 1rem 10rem;
+    .contenRef {
+        background-color: $color-ref2;
+        box-shadow: 0 0 10px 0 $color-boxShadow2;
+        transition: all 300ms;
+        position: relative;
+        &:hover {
+            transform: scale(1.15);
+            background-color: $color-ref1;
+        }
+    }
+}
+}
+@media (min-width: 991.98px) {
+    .contenedorPrincipal {
+        .banner {
+            height: 50vh;
+            .titulos {
+                padding-top: 8rem;
+                h3 {
+                    font-size: 5rem;
+                }
+                h1 {
+                    font-size: 10rem;
+                }
+            }
+        }
+    }
+/* -- Seccion Nosotros -- */
+.seccionIndex{
+    h2 {
+        font-size: 3rem;
+        .seccionNosotros {
+            display: flex;
+            margin: 3rem 6rem;
+            img {
+                width: 30rem;
+            }
+            .textNosotros{
+                li {
+                    font-size: 2rem;
+                    p {
+                        font-size: 1.5rem;
+                        padding: 2rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/* -- Seccion Productos -- */
+.seccionProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.secciones{
+    h2 {
+        font-size: 3rem;
+    }
+}
+/* -- Seccion Servicios -- */
+.seccionServicios {
+    padding: 1rem 8rem;
+    display: flex;
+    .figures {
+        display: inline;
+    }
+}
+    
+/* -- Seccion Referencias -- */
+.seccionReferencias {
+    padding: 1rem 20rem;
+    .contenRef {
+        background-color: $color-ref2;
+        box-shadow: 0 0 10px 0 $color-boxShadow2;
+        transition: all 300ms;
+        position: relative;
+        &:hover {
+            transform: scale(1.15);
+            background-color: #86cdfc70;
+        }
+        .textRef p{
+            &:hover {
+                font-size: 1.5rem;
+                transition: ease 500ms;
+            }
+        }
+    }
+}
+
+}
+@media (min-width: 1199.98px) {
+.contenedorPrincipal {
+    .banner {
+        .titulos {
+            padding-top: 10rem;
+            h3 {
+                font-size: 3.5rem;
+            }
+            h1 {
+                font-size: 9rem;
+            }
+        }
+    }
+}
+/* -- Seccion Nosotros -- */
+.seccionIndex {
+    padding: 5rem 0;
+    h2 {
+        font-size: 3rem;
+    }
+    .seccionNosotros {
+        display: flex;
+        margin: 3rem 30rem;
+        img {
+            width: 36rem;
+        }
+        .textNosotros{
+            li {
+                font-size: 2rem;
+                p {
+                    font-size: 1.9rem;
+                    padding: 2rem 0;
+                }
+            }
+        }
+    }
+}
+/* -- Seccion Servicios -- */
+.seccionServicios {
+    padding: 1rem 25rem;
+    display: flex;
+    .figures {
+        display: inline;
+    }
+}
+/* -- Seccion Referencias -- */
+.seccionReferencias {
+    padding: 1rem 30rem;
+    .contenRef {
+        background-color: $color-ref2;
+        box-shadow: 0 0 10px 0 $color-boxShadow2;
+        transition: all 300ms;
+        position: relative;
+        &:hover {
+            transform: scale(1.15);
+            background-color: $color-ref1;
+        }
+        .textRef p{
+            &:hover {
+                font-size: 1.5rem;
+                transition: ease 500ms;
+            }
+        }
+    }
+}
+}

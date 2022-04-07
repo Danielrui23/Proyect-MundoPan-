@@ -1,0 +1,50 @@
+@import "_variables.scss";
+#pie {
+    background-color: $color-secundary;
+    height: 14rem;
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        h3 {
+            color: $color-text;
+            font-weight: 600;
+        }
+        i {
+            margin: 2rem;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .bi-instagram{
+            &:hover {
+                color: $color-insta;
+            }
+        }
+        .bi-facebook{
+            &:hover {
+                color: $color-face;
+            }
+        }
+        .bi-twitter{
+            &:hover {
+                color: $color-twitter;
+            }
+        }
+    }
+    .dev{
+        border-top: 1px solid $color-text;
+        padding-top: 1rem;
+        color: $color-text;
+        text-align: center;
+        font-size: 1.2rem;
+        a {
+            color: $color-primary;
+            font-weight: bold;
+            &:hover {
+                color: $color-text2;
+            }
+        }
+    }
+}

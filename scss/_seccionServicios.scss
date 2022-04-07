@@ -1,0 +1,28 @@
+@import "_variables.scss";
+.seccionServicios {
+    padding: 0.1rem;
+    .figures {
+        margin: 2rem;
+        background-color: $color-primary;
+        border-radius: 5%;
+        padding: 1rem;
+        &:hover {
+            box-shadow: 0 0 10px 0 $color-boxShadow1;
+        }
+        .imgServ {
+            width: 13rem;
+            padding: 1rem;
+        }
+        .textServ {
+            figcaption {
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 0.5rem;
+            }
+            p {
+                text-align: center;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

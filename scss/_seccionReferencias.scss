@@ -1,0 +1,29 @@
+@import "_variables.scss";
+.seccionReferencias {
+    padding: 1rem 3rem;
+    .contenRef {
+        margin: 2rem 0rem;
+        display: flex;
+        background-color: $color-ref1;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        height: auto;
+        box-shadow: 0 0 10px 0 $color-boxShadow2;
+        .imgFaces {
+            margin-right: 1rem;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            border: 3px solid $color-text;
+        }
+        .textRef{
+            h3 {
+                text-align: start;
+            }
+            p {
+                text-align: start;
+                font-size: 1rem;
+            }
+        }
+    }
+}

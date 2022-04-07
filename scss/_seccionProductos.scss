@@ -1,0 +1,27 @@
+@import "_variables.scss";
+.seccionProductos {
+    padding: 1rem;
+    .articulo {
+        margin-bottom: 1.5rem;
+        p {
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+        }
+        .imgProd {
+            width: 25rem;
+            height: 20rem;
+            border-radius: 1rem;
+            &:hover {
+                box-shadow: 0 0 20px 0 $color-boxShadow1;
+            }
+        }
+    }
+    h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+    }
+}
