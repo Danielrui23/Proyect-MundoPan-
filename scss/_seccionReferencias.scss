@@ -8,7 +8,7 @@
         padding: 1rem;
         border-radius: 0.5rem;
         height: auto;
-        box-shadow: 0 0 10px 0 $color-boxShadow2;
+        box-shadow: map-get($map: $shadow, $key:"sh2");
         .imgFaces {
             margin-right: 1rem;
             width: 5rem;
@@ -17,8 +17,9 @@
             border: 3px solid $color-text;
         }
         .textRef{
-            h3 {
+            h4{
                 text-align: start;
+                font-weight: bold
             }
             p {
                 text-align: start;

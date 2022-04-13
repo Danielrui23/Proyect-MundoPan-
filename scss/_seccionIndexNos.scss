@@ -1,10 +1,8 @@
 .seccionIndex{
     text-align: center;
     padding: 1rem;
-    h2 {
-        font-size: 2rem;
-        font-weight: bold;
-        text-transform: uppercase;
+    h3 {
+        @include tituloSecc(2rem, bold, uppercase);
     }
     .seccionNosotros{
         img {

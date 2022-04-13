@@ -14,15 +14,15 @@
         .titulos {
             text-align: center;
             color: $color-text;
-            padding-top: 7rem;
-            h3 {
-                font-size: 2rem;
-                font-weight: lighter;
-            }
+            padding-top: 4rem;
             h1 {
                 font-size: 5rem;
                 font-weight: bold;
+            }
+            h2 {
                 text-decoration: overline 1px solid $color-overline;
+                font-size: 2rem;
+                font-weight: lighter;
             }
         }
     }

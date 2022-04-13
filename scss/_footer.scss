@@ -18,19 +18,13 @@
             }
         }
         .bi-instagram{
-            &:hover {
-                color: $color-insta;
-            }
+            @include redesSociales($color-insta)
         }
         .bi-facebook{
-            &:hover {
-                color: $color-face;
-            }
+            @include redesSociales($color-face)
         }
         .bi-twitter{
-            &:hover {
-                color: $color-twitter;
-            }
+            @include redesSociales($color-twitter)
         }
     }
     .dev{

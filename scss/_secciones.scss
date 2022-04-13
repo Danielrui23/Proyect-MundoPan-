@@ -1,9 +1,7 @@
 .secciones {
     text-align: center;
     padding-top: 10rem;
-    h2 {
-        font-size: 2rem;
-        font-weight: bold;
-        text-transform: uppercase;
+    h3 {
+        @include tituloSecc(2rem, bold, uppercase)
     }
 }

@@ -5,8 +5,8 @@
   right: 0; }
   .navbar .container-fluid .navbar-brand img {
     width: 12rem; }
-  .navbar .container-fluid .collapse .navbar-nav .nav-item a {
-    font-size: 1.5rem;
+  .navbar .container-fluid .nav-link {
+    font-size: 1.3rem;
     font-weight: 700;
     margin-right: 1.5rem;
     text-transform: uppercase; }
@@ -30,19 +30,19 @@
     .contenedorPrincipal .banner .titulos {
       text-align: center;
       color: whitesmoke;
-      padding-top: 7rem; }
-      .contenedorPrincipal .banner .titulos h3 {
-        font-size: 2rem;
-        font-weight: lighter; }
+      padding-top: 4rem; }
       .contenedorPrincipal .banner .titulos h1 {
         font-size: 5rem;
-        font-weight: bold;
-        text-decoration: overline 1px solid rgba(245, 245, 245, 0.748); }
+        font-weight: bold; }
+      .contenedorPrincipal .banner .titulos h2 {
+        text-decoration: overline 1px solid rgba(245, 245, 245, 0.748);
+        font-size: 2rem;
+        font-weight: lighter; }
 
 .seccionIndex {
   text-align: center;
   padding: 1rem; }
-  .seccionIndex h2 {
+  .seccionIndex h3 {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase; }
@@ -76,7 +76,7 @@
       #pie .footerContent i:hover {
         cursor: pointer; }
     #pie .footerContent .bi-instagram:hover {
-      color: #e1306c; }
+      color: #8a3ab9; }
     #pie .footerContent .bi-facebook:hover {
       color: #3b5998; }
     #pie .footerContent .bi-twitter:hover {
@@ -96,7 +96,7 @@
 .secciones {
   text-align: center;
   padding-top: 10rem; }
-  .secciones h2 {
+  .secciones h3 {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase; }
@@ -105,22 +105,17 @@
   padding: 1rem; }
   .seccionProductos .articulo {
     margin-bottom: 1.5rem; }
-    .seccionProductos .articulo p {
-      text-align: center;
-      font-size: 1.8rem;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 600; }
     .seccionProductos .articulo .imgProd {
       width: 25rem;
       height: 20rem;
       border-radius: 1rem; }
       .seccionProductos .articulo .imgProd:hover {
-        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.548); }
-  .seccionProductos h3 {
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.548); }
+  .seccionProductos .subtitleProductos, .seccionProductos .articulo p {
     text-align: center;
     font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    text-transform: initial; }
 
 .seccionServicios {
   padding: 0.1rem; }
@@ -130,7 +125,7 @@
     border-radius: 5%;
     padding: 1rem; }
     .seccionServicios .figures:hover {
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.548); }
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.212); }
     .seccionServicios .figures .imgServ {
       width: 13rem;
       padding: 1rem; }
@@ -151,15 +146,16 @@
     padding: 1rem;
     border-radius: 0.5rem;
     height: auto;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212); }
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.212); }
     .seccionReferencias .contenRef .imgFaces {
       margin-right: 1rem;
       width: 5rem;
       height: 5rem;
       border-radius: 50%;
       border: 3px solid whitesmoke; }
-    .seccionReferencias .contenRef .textRef h3 {
-      text-align: start; }
+    .seccionReferencias .contenRef .textRef h4 {
+      text-align: start;
+      font-weight: bold; }
     .seccionReferencias .contenRef .textRef p {
       text-align: start;
       font-size: 1rem; }
@@ -182,15 +178,15 @@
 
 @media (min-width: 767.98px) {
   .contenedorPrincipal .banner .titulos {
-    padding-top: 4rem; }
-    .contenedorPrincipal .banner .titulos h3 {
-      font-size: 3.5rem; }
+    padding-top: 1rem; }
     .contenedorPrincipal .banner .titulos h1 {
       font-size: 9rem; }
+    .contenedorPrincipal .banner .titulos h2 {
+      font-size: 3.5rem; }
   /* -- Seccion Nosotros -- */
   .seccionIndex {
     padding: 5rem 0; }
-    .seccionIndex h2 {
+    .seccionIndex h3 {
       font-size: 3rem; }
     .seccionIndex .seccionNosotros {
       display: flex;
@@ -209,7 +205,7 @@
     .seccionProductos h3 {
       font-size: 2.5rem;
       padding-top: 5rem; }
-  .contenedorPrincipal .secciones h2 {
+  .contenedorPrincipal .secciones h3 {
     font-size: 3rem; }
   /* -- Seccion Servicios -- */
   .seccionServicios {
@@ -237,29 +233,29 @@
   .contenedorPrincipal .banner {
     height: 50vh; }
     .contenedorPrincipal .banner .titulos {
-      padding-top: 8rem; }
-      .contenedorPrincipal .banner .titulos h3 {
-        font-size: 5rem; }
+      padding-top: 5rem; }
       .contenedorPrincipal .banner .titulos h1 {
         font-size: 10rem; }
+      .contenedorPrincipal .banner .titulos h2 {
+        font-size: 5rem; }
   /* -- Seccion Nosotros -- */
-  .seccionIndex h2 {
+  .seccionIndex h3 {
     font-size: 3rem; }
-    .seccionIndex h2 .seccionNosotros {
+    .seccionIndex h3 .seccionNosotros {
       display: flex;
       margin: 3rem 6rem; }
-      .seccionIndex h2 .seccionNosotros img {
+      .seccionIndex h3 .seccionNosotros img {
         width: 30rem; }
-      .seccionIndex h2 .seccionNosotros .textNosotros li {
+      .seccionIndex h3 .seccionNosotros .textNosotros li {
         font-size: 2rem; }
-        .seccionIndex h2 .seccionNosotros .textNosotros li p {
+        .seccionIndex h3 .seccionNosotros .textNosotros li p {
           font-size: 1.5rem;
           padding: 2rem 0; }
   /* -- Seccion Productos -- */
   .seccionProductos {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-  .secciones h2 {
+  .secciones h3 {
     font-size: 3rem; }
   /* -- Seccion Servicios -- */
   .seccionServicios {
@@ -284,15 +280,15 @@
 
 @media (min-width: 1199.98px) {
   .contenedorPrincipal .banner .titulos {
-    padding-top: 10rem; }
-    .contenedorPrincipal .banner .titulos h3 {
-      font-size: 3.5rem; }
+    padding-top: 5rem; }
     .contenedorPrincipal .banner .titulos h1 {
-      font-size: 9rem; }
+      font-size: 12rem; }
+    .contenedorPrincipal .banner .titulos h2 {
+      font-size: 4.5rem; }
   /* -- Seccion Nosotros -- */
   .seccionIndex {
     padding: 5rem 0; }
-    .seccionIndex h2 {
+    .seccionIndex h3 {
       font-size: 3rem; }
     .seccionIndex .seccionNosotros {
       display: flex;

@@ -10,15 +10,11 @@
         width: 12rem;
       }
     }
-    .collapse{
-      .navbar-nav{
-        .nav-item a{
-          font-size: 1.5rem;
-          font-weight: 700;
-          margin-right: 1.5rem;
-          text-transform: uppercase;
-        }
-      }
+    .nav-link{
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-right: 1.5rem;
+      text-transform: uppercase;
     }
   }
 }

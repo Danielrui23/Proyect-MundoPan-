@@ -1,0 +1,18 @@
+// MIXINS
+    @mixin redesSociales($hover) {
+        &:hover {
+            color: $hover;
+        }
+    }
+    @mixin tituloSecc($size, $weight, $transform) {
+            font-size: $size;
+            font-weight: $weight;
+            text-transform: $transform;
+    }
+
+//MAP
+$shadow:(
+    'sh1': 0px 0px 20px 0px rgba(0, 0, 0, 0.548),
+    'sh2': 0px 0px 10px 0px rgba(0, 0, 0, 0.212),
+    )
+;

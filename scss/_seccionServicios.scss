@@ -7,7 +7,7 @@
         border-radius: 5%;
         padding: 1rem;
         &:hover {
-            box-shadow: 0 0 10px 0 $color-boxShadow1;
+            box-shadow: map-get($map: $shadow, $key: 'sh2');
         }
         .imgServ {
             width: 13rem;
