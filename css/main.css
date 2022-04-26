@@ -22,7 +22,7 @@
     background-image: url(../img/ind/portada.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: 20vh;
     width: 100%;
     background-color: #24232393;
     background-blend-mode: multiply;
@@ -30,7 +30,7 @@
     .contenedorPrincipal .banner .titulos {
       text-align: center;
       color: whitesmoke;
-      padding-top: 4rem; }
+      padding-top: 6rem; }
       .contenedorPrincipal .banner .titulos h1 {
         font-size: 5rem;
         font-weight: bold; }
@@ -158,13 +158,36 @@
       font-weight: bold; }
     .seccionReferencias .contenRef .textRef p {
       text-align: start;
-      font-size: 1rem; }
+      font-size: 1.3rem; }
 
 .seccionContacto {
-  padding: 5rem 5rem 25rem 5rem;
+  padding: 2rem 2rem 7rem 2rem;
   text-align: start; }
+  .seccionContacto .col-md-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .seccionContacto .col-md-3 img {
+      margin: 1rem;
+      width: 12rem; }
+    .seccionContacto .col-md-3 h4 {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      font-weight: 900; }
+  .seccionContacto .form-label {
+    padding-top: 1.5rem;
+    font-size: 1.5rem; }
+  .seccionContacto .form-control {
+    font-size: 1.5rem; }
   .seccionContacto .btn {
-    width: 100%; }
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: #242323;
+    border: none; }
+    .seccionContacto .btn:hover {
+      background-color: #ffc559;
+      color: #242323;
+      font-weight: 900; }
 
 @media (min-width: 575.98px) {
   /* -- Seccion Referencias -- */
@@ -174,11 +197,37 @@
       background-color: #86cdfc70; }
       .seccionReferencias .contenRef:hover {
         transform: scale(1.15);
-        background-color: #86cdfc70; } }
+        background-color: #86cdfc70; }
+  .contenedorPrincipal .secciones .seccion404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem; }
+    .contenedorPrincipal .secciones .seccion404 h4 {
+      font-size: 10rem;
+      padding: 2rem;
+      font-weight: 100; }
+    .contenedorPrincipal .secciones .seccion404 p {
+      font-size: 2rem; }
+    .contenedorPrincipal .secciones .seccion404 .img404 {
+      border-radius: 50%;
+      width: 33rem; }
+  .seccionContacto {
+    padding: 2rem 5rem 7rem 5rem; }
+    .seccionContacto .col-md-3 {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .seccionContacto .col-md-3 img {
+        width: 15rem;
+        margin: 2rem; }
+      .seccionContacto .col-md-3 h4 {
+        margin-top: 1rem;
+        font-weight: 900; } }
 
 @media (min-width: 767.98px) {
   .contenedorPrincipal .banner .titulos {
-    padding-top: 1rem; }
+    padding-top: 2.2rem; }
     .contenedorPrincipal .banner .titulos h1 {
       font-size: 9rem; }
     .contenedorPrincipal .banner .titulos h2 {
@@ -227,17 +276,29 @@
       position: relative; }
       .seccionReferencias .contenRef:hover {
         transform: scale(1.15);
-        background-color: #86cdfc70; } }
+        background-color: #86cdfc70; }
+  .seccionContacto {
+    padding: 2rem 2rem 2rem 2rem; }
+    .seccionContacto .col-md-3 {
+      display: flex;
+      flex-direction: column; }
+      .seccionContacto .col-md-3 img {
+        width: 15rem;
+        margin: 2rem; }
+      .seccionContacto .col-md-3 h4 {
+        margin-top: 1rem;
+        font-weight: 900;
+        font-size: 1.5rem; } }
 
 @media (min-width: 991.98px) {
   .contenedorPrincipal .banner {
-    height: 50vh; }
+    height: 30vh; }
     .contenedorPrincipal .banner .titulos {
       padding-top: 5rem; }
       .contenedorPrincipal .banner .titulos h1 {
-        font-size: 10rem; }
+        font-size: 12rem; }
       .contenedorPrincipal .banner .titulos h2 {
-        font-size: 5rem; }
+        font-size: 4.5rem; }
   /* -- Seccion Nosotros -- */
   .seccionIndex h3 {
     font-size: 3rem; }
@@ -276,15 +337,29 @@
         background-color: #86cdfc70; }
       .seccionReferencias .contenRef .textRef p:hover {
         font-size: 1.5rem;
-        transition: ease 500ms; } }
+        transition: ease 500ms; }
+  .seccionContacto {
+    padding: 2rem 5rem 7rem 5rem; }
+    .seccionContacto .col-md-3 {
+      display: flex;
+      flex-direction: column; }
+      .seccionContacto .col-md-3 img {
+        width: 20rem;
+        margin: 2rem; }
+      .seccionContacto .col-md-3 h4 {
+        margin-top: 1rem;
+        font-weight: 900;
+        font-size: 1.5rem; } }
 
 @media (min-width: 1199.98px) {
-  .contenedorPrincipal .banner .titulos {
-    padding-top: 5rem; }
-    .contenedorPrincipal .banner .titulos h1 {
-      font-size: 12rem; }
-    .contenedorPrincipal .banner .titulos h2 {
-      font-size: 4.5rem; }
+  .contenedorPrincipal .banner {
+    height: 60vh; }
+    .contenedorPrincipal .banner .titulos {
+      padding-top: 9rem; }
+      .contenedorPrincipal .banner .titulos h1 {
+        font-size: 12rem; }
+      .contenedorPrincipal .banner .titulos h2 {
+        font-size: 4.5rem; }
   /* -- Seccion Nosotros -- */
   .seccionIndex {
     padding: 5rem 0; }
@@ -292,7 +367,7 @@
       font-size: 3rem; }
     .seccionIndex .seccionNosotros {
       display: flex;
-      margin: 3rem 30rem; }
+      margin: 3rem 10rem; }
       .seccionIndex .seccionNosotros img {
         width: 36rem; }
       .seccionIndex .seccionNosotros .textNosotros li {
@@ -331,3 +406,19 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #242323; }
+
+.contenedorPrincipal .secciones .seccion404 {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem; }
+  .contenedorPrincipal .secciones .seccion404 h4 {
+    font-size: 5rem;
+    padding: 2rem;
+    font-weight: 900; }
+  .contenedorPrincipal .secciones .seccion404 p {
+    font-size: 1.5rem; }
+  .contenedorPrincipal .secciones .seccion404 .img404 {
+    border-radius: 50%;
+    width: 20rem; }
+  .contenedorPrincipal .secciones .seccion404 a {
+    font-size: 1.5rem; }

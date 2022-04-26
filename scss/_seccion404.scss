@@ -1,0 +1,24 @@
+.contenedorPrincipal{
+    .secciones{
+        .seccion404{
+            display: flex;
+            flex-direction: column;
+            padding: 3rem;
+            h4{
+                font-size: 5rem;
+                padding: 2rem;
+                font-weight: 900;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            .img404{
+                border-radius: 50%;
+                width: 20rem;
+            }
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

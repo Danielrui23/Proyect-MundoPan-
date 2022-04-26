@@ -6,7 +6,7 @@
         background-image: url(../img/ind/portada.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 30vh;
+        height: 20vh;
         width: 100%;
         background-color: $color-banner;
         background-blend-mode: multiply;
@@ -14,7 +14,7 @@
         .titulos {
             text-align: center;
             color: $color-text;
-            padding-top: 4rem;
+            padding-top: 6rem;
             h1 {
                 font-size: 5rem;
                 font-weight: bold;
